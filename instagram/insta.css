@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #fafafa;
+    font-family: Helveltica, sans-serif;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-grow:1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.izquierda{
+    position:relative;
+}
+
+.izquierda img{
+    position:relative;
+    right:6%;
+    width:300px;
+    height: 480px;
+    margin-top: -40%;
+    
+}
+
+.panel{
+    width: 300px;
+    background-color: #fafafa;
+    border:1px solid #dedede;
+    border-radius: 2px;
+    padding:20px 40px;
+    margin: 5px 0;
+    display:flex;
+}
+
+.login{
+    flex-direction: column;
+    align-items: center; 
+}
+#logo{
+    width: 65%;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 10px;
+    background-color: #ffff;
+    border:1px solid #fefefe;
+    border-radius: 2px;
+}
+
+.input-box::placeholder {
+    color:#8a8a8a;
+    font-size: 12px;
+}
+
+.input-box:focus{
+    outline: none;
+    border:1px solid #fefefe;
+}
+
+.button{
+    width:100%;
+    margin:10px 0;
+    padding: 7px 0;
+    background-color: #b2c6fc;
+    color:#fff;
+    border-radius:5px;
+    border:none;
+    font-size: 14px;
+}
+
+.divider{
+    display:flex;
+    width:100%;
+    font-size: 12px;
+    color: #8a8a8a;
+    font-weight: bold;
+    gap:20px;
+    align-items: center;
+}
+
+.line{
+    flex:1;
+    height:1px;
+    background-color: #8a8a8a;
+}
+
+.fb{
+    margin:20px 0;
+    color:#3b5998;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fb::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f082";
+    margin-right:5px;
+    font-size: 12px;
+}
+
+.forgot{
+    color:#000;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.registrate{
+    justify-content: center;
+    gap:5px;
+    font-size: 14px;
+}
+
+.registrate a {
+    color: #3b58ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.apps{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin:20px;
+}
+
+.app-stores{
+    display:flex;
+    gap:10px;
+    margin-top: 20px;
+}
+
+.app-stores img{
+    width: 140px;
+    height:auto ;
+}
+
+footer{
+    width: 990px;
+    margin-bottom: 40px;
+  
+
+}
+
+ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    font-size: 12px;
+    list-style: none;
+    gap:10px;
+    margin:20px 0;
+}
+
+li, a {
+    color:#8a8a8a;
+    text-decoration: none;
+}
+
+@media screen and (max-width:470px){
+
+    .izquierda{
+        display:none
+    }
+
+    .izquierda img{
+      display: none;
+        
+    }
+    
+
+    .panel{
+        width: 350px;
+        background-color: #fafafa;
+        border:1px solid #dedede;
+        border-radius: 2px;
+        padding:20px 40px;
+        margin: 5px 0;
+        display:flex;
+    }
+    
+    .login{
+        flex-direction: column;
+        align-items: center; 
+    }
+    #logo{
+        width: 65%;
+        margin-top:20px;
+        margin-bottom: 30px;
+    }
+    
+    form{
+        width:180%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input-box{
+        width: 50%;
+        padding:10px;
+        margin-bottom: 10px;
+        background-color: #ffff;
+        border:1px solid #fefefe;
+        border-radius: 2px;
+    }
+    
+    .input-box::placeholder {
+        color:#8a8a8a;
+        font-size: 12px;
+    }
+    
+    .input-box:focus{
+        outline: none;
+        border:1px solid #fefefe;
+    }
+    
+    .button{
+        width:50%;
+        margin:10px 0;
+        padding: 7px 0;
+        background-color: #b2c6fc;
+        color:#fff;
+        border-radius:5px;
+        border:none;
+        font-size: 14px;
+    }
+    
+    .divider{
+        display:flex;
+        width:50%;
+        font-size: 12px;
+        color: #8a8a8a;
+        font-weight: bold;
+        gap:20px;
+        align-items: center;
+    }
+    
+    .line{
+        flex:1;
+        height:1px;
+        background-color: #8a8a8a;
+    }
+    
+    .fb{
+        margin:20px 0;
+        color:#3b5998;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .fb::before {
+        font-family: "Font Awesome 5 Brands";
+        content: "\f082";
+        margin-right:5px;
+        font-size: 12px;
+    }
+    
+    .forgot{
+        color:#000;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    .registrate{
+        justify-content: center;
+        gap:5px;
+        font-size: 14px;
+    }
+    
+    .registrate a {
+        color: #3b58ff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .apps{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        margin:20px;
+    }
+    
+    .app-stores{
+        display:flex;
+        gap:10px;
+        margin-top: 20px;
+    }
+    
+    .app-stores img{
+        width: 120px;
+        height:auto ;
+    }
+    
+    footer{
+        width:380px;
+        margin-bottom: 40px;
+      
+    
+    }
+    
+    ul{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        font-size: 12px;
+        list-style: none;
+        gap:10px;
+        margin:20px 0;
+    }
+    
+    li, a {
+        color:#8a8a8a;
+        text-decoration: none;
+    }
+
+   
+}
