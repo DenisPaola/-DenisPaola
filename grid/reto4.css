@@ -1,0 +1,106 @@
+.container{ 
+    display: grid;
+    grid-template-areas: "header    header      headerSide"
+                         "aside     contenido   contenido"
+                         "aside     contenido   contenido"
+                         "aside     contenido   contenido"
+                         "aside     contenido   contenido"
+                         "aside     contenido   contenido"
+                         "footer    footer      footer";
+    width: 800px;
+    height:80vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.container .header{
+    background-color: rgb(223, 81, 30);
+    text-align: center;
+    grid-area: header;
+    color:white;
+}
+
+.container .headerSide{
+    background-color:rgb(97, 29, 4);
+    text-align: center;
+    grid-area: headerSide;
+    color:white;
+}
+
+.container .aside{
+    background-color: rgb(245, 73, 10);
+    text-align: center;
+    grid-area: aside;
+    color:white;
+    display:grid;
+    grid-template-areas: "aside1"
+                          "vacio"
+                          "aside2";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-block-end: 10px;
+    
+    
+}
+
+.container .aside .aside1{
+    background-color: white;
+    text-align: center;
+    grid-area: aside1;
+    color: orangered;
+    grid-gap: 10px;
+
+}
+
+.container .aside .aside1{
+    text-align: center;
+    grid-area: aside1;
+    grid-gap: 10px;
+   
+
+}
+.container .aside .aside2{
+    background-color:white;
+    text-align: center;
+    grid-area: aside2;
+    color: rgb(255, 60, 0);
+    grid-gap: 10px;
+    
+}
+
+
+
+.container .contenido{
+    background-color: rgb(255, 17, 0);
+    text-align: center;
+    grid-area: contenido;
+    color:white;
+    display: grid;
+    grid-template-areas: "contenido"
+                         "texto";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-block-end: 10px;
+}
+
+.container .contenido .contenido1{
+    text-align: center;
+    border: 1px solid white;
+    
+}
+
+.container .contenido .texto{
+    text-align: center;
+    border: 1px solid white;
+   
+}
+
+
+.container .footer{
+    background-color: rgb(59, 3, 3);
+    text-align: center;
+    grid-area: footer;
+    color:white;
+}

@@ -1,0 +1,179 @@
+
+.container{
+    display: grid;
+    grid-template-columns: [y1] 1fr [y2] 1fr [y3] 1fr [y4];
+    grid-template-rows: [x1] 0.15fr [x2] 1fr [x3] 0.15fr [x4];
+    text-align: center;
+    width: 800px;
+    height:80vh;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container .header{
+    background-color: black;
+    grid-column: y1 / y4;
+    grid-row: x1 / x2;
+    text-align: center;
+    display: grid;
+    padding-top: 15px;
+    color: white;
+    font-size:25px;
+    
+}
+
+.container .contenido{
+    background-color:blue;
+    grid-column: y1 / y3;
+    grid-row: x2 / x3;
+    display:grid;
+    grid-template-areas: "contenido  contenido   contenido"
+    "contenido  contenido   contenido"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto"
+    "texto     texto        texto";
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-block-end: 10px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.container .contenido .contenido1{
+   
+    grid-area: contenido;
+    border: 1px solid white;
+    text-align: left;
+   
+    
+}
+
+.container .contenido .texto{
+    background-color: blue;
+    grid-area: texto;
+    display:grid;
+    grid-template-areas: "texto1 texto1 texto2"
+    "texto1 texto1 texto2";
+    grid-gap: 5px;
+    padding-top:5px;
+    
+
+}
+
+.container .contenido .texto .texto1{
+    
+    grid-area: texto1 ;
+    border: 1px solid rgba(255, 255, 255, 0.952);
+    text-align: left;
+    font-size: 15px;
+    
+    
+}
+
+.container .contenido .texto .texto2{
+  
+    grid-area: texto2 ;
+    border: 1px solid rgba(255, 255, 255, 0.89);
+    text-align: left;
+    font-size: 15px;
+
+}
+
+.container .menu{
+    background-color: turquoise;
+    grid-column: y3 / y4;
+    grid-row: x2 / x3;
+    display:grid;
+    grid-template-areas:"menu1" 
+   "menu2"
+   "menu3"
+   "menu4"; 
+    grid-gap:5px; 
+    padding-top:10px;
+    padding-left: 10px;
+    padding-block-end: 10px;
+    padding-right:10px;        
+    
+}
+
+.container .menu .menu1{
+   
+    border: 2px solid black;
+    grid-area: menu1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    color:white;
+}
+
+.container .menu .menu2{
+    background-color: black;
+    border: 1px solid black;
+    grid-area: menu2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white;   
+}
+
+.container .menu .menu3{
+    background-color: black;
+    border: 1px solid black;
+    grid-area: menu3;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    color:white;  
+}
+
+.container .menu .menu4{
+    background-color: black;
+    border: 1px solid black;
+    grid-area: menu4;   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.container .footer{
+    background-color: blueviolet;
+    grid-column: y1 / y4;
+    grid-row: x3 / x4;
+    display: grid;
+    grid-template-areas: "footer contacto"
+                         "footer contacto";
+    grid-gap:5px; 
+    padding-top:5px;
+    padding-left: 5px;
+    padding-block-end: 5px;
+    padding-right:5px;    
+}
+
+.container .footer .footer1{
+    border: 2px solid black;
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+
+.container .footer .contacto{
+    border:2px solid black;
+    grid-area:contacto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
